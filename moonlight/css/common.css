@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    color: #3d3d3d; line-height: 1.3; font-family: 'Noto Sans KR','Malgun Gothic','Apple SD Gothic','Apple SD Gothic Neo','Dotum',sans-serif; font-size: 16px; font-weight: 300;
+}
+#wrap{
+    position:relative; overflow:hidden; min-width: 1440px;
+}
+.wrapper{
+    width: 1440px;
+    padding: 0 20px; margin: 0 auto;
+}
+@media screen and (max-width:640px){
+    html,body{
+        font-size: 13px;
+    }
+    #wrap{
+        min-width: 350px;
+    }
+    .wrapper{
+        width: auto;
+    }
+}
+.clearfix::after{
+    display: block; clear: both; content: "."; visibility: hidden; height: 0;
+}
+.clearfix{
+    display: block;
+}
+.cnt_wrap {
+    position: relative;
+}
+
+.header{
+    position: fixed; z-index: 1000;
+    right: 0; top: 260px;
+    
+}
+.header h1{
+    display: none;
+}
+.side{
+    position: fixed; z-index: 200;
+    right: 10px; top: 330px;
+    color: #FFF;
+}
+.side ul{
+    width: 90px;
+}
+.side ul li{
+    position: relative;
+    text-align: center;
+}
+.side ul li::after{
+    position: absolute;
+    left: 0; bottom: 0px; width: 100%; height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    content: "";
+}
+.side ul li a{
+    display: block;
+    height: 110px;
+    padding: 20px 0 0 0;
+}
+.side ul li a i{
+    font-size: 33px; font-weight: 300;
+}
+.side ul li a span{
+    display: block;
+    margin: 5px 0 0 0;
+}

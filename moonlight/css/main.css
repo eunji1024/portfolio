@@ -1,0 +1,9 @@
+@import url(default.css);
+@import url(common.css);
+.vis{
+    height: 4157px;
+    background: #141E3C url(../images/bg.png) no-repeat center center;
+}
+.vis h2{
+    display: none;
+}
